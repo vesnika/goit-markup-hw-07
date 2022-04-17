@@ -659,6 +659,8 @@ body {
 
 .clients-list-icon {
   fill: var(--fill-icon-color);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-icon:hover, .clients-list-icon:focus {
@@ -668,11 +670,6 @@ body {
 .clients-list-link:hover .clients-list-icon,
 .clients-list-link:focus .clients-list-icon {
   fill: var(--accent-color);
-}
-
-.clients-list-link .clients-list-icon {
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-item {
@@ -693,15 +690,12 @@ body {
   background: var(--white-color);
   border-radius: 4px;
   border: 1px solid var(--fill-icon-color);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover .wrapper-clients-icon {
   border-color: var(--accent-color);
-}
-
-.clients-list-link .wrapper-clients-icon {
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__container {
