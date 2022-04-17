@@ -10,8 +10,7 @@
 
    border-radius: 4px;
    font-weight: 500;
-   font-size: 16px;
-   line-height: 1.63;
+   @include font-size-height(16px, 1.63);
    letter-spacing: inherit;
    color: inherit;
    font-family: inherit;

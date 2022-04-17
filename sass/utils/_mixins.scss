@@ -1,0 +1,9 @@
+@mixin position {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+@mixin font-size-height($fs, $lh) {
+   font-size: $fs;
+   line-height: $lh;
+}

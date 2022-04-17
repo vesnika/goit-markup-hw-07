@@ -8,9 +8,7 @@
    padding: 63px 24px;
 
    opacity: 0;
-   font-size: 18px;
-   line-height: 1.56;
-
+   @include font-size-height(18px, 1.56);
    color: var(--white-color);
    background-color: rgba(33, 150, 243, 0.9);
    transform: translateY(100%);

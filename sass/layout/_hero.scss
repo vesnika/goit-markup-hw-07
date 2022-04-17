@@ -1,7 +1,6 @@
 .hero__title {
-   font-size: 44px;
+   @include font-size-height(44px, 1.36);
    font-weight: 900;
-   line-height: 1.36;
    letter-spacing: 0.06em;
    text-transform: uppercase;
    color: var(--white-color);

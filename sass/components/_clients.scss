@@ -18,9 +18,7 @@
    width: 170px;
 }
 .wrapper-clients-icon {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   @include position;
 
    height: 92px;
    background: var(--white-color);

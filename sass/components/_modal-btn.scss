@@ -1,9 +1,8 @@
 .modal-btn {
    font-family: inherit;
    font-weight: 700;
-   font-size: 16px;
    font-style: inherit;
-   line-height: 1.88;
+   @include font-size-height(16px, 1.88);
    letter-spacing: 0.06em;
    background-color: var(--accent-color);
    color: var(--white-color);

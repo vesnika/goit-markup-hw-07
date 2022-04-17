@@ -1,7 +1,6 @@
 .social-list-footer-title {
    font-weight: bold;
-   font-size: 14px;
-   line-height: 1.14;
+   @include font-size-height(14px, 1.14);
    margin-bottom: 20px;
    text-transform: uppercase;
    color: var(--white-color);
@@ -16,9 +15,7 @@
    fill: var(--white-color);
 }
 .social-list-link-footer {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   @include position;
 
    border-radius: 50%;
    width: 44px;

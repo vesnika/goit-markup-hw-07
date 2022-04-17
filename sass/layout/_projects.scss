@@ -34,15 +34,13 @@
 }
 .description-projects-title {
    font-weight: 700;
-   font-size: 18px;
-   line-height: 2;
+   @include font-size-height(18px, 2);
    letter-spacing: 0.06em;
    margin-bottom: 4px;
    color: var(--primary-color);
 }
 .description-projects-subtitle {
-   font-size: 16px;
-   line-height: 1.88;
+   @include font-size-height(16px, 1.88);
    color: var(--secondary-color);
 }
 .no-gap {

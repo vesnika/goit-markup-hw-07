@@ -19,16 +19,14 @@
 }
 .team-member-name {
    font-weight: 500;
-   font-size: 16px;
-   line-height: 1.19;
+   @include font-size-height(16px, 1.19);
    text-align: center;
    margin-bottom: 10px;
 }
 
 .description-position {
-   font-size: 16px;
+   @include font-size-height(16px, 1.19);
    margin-bottom: 16px;
-   line-height: 1.19;
    text-align: center;
    color: var(--secondary-color);
 }
