@@ -10,7 +10,7 @@
 }
 .address {
    text-decoration: none;
-   line-height: 1.71em;
+   line-height: 1.71;
    margin-top: 20px;
    margin-bottom: 9px;
    color: var(--white-color);
@@ -23,7 +23,7 @@
 }
 
 .contacts-item-footer {
-   line-height: 1.71em;
+   line-height: 1.71;
 
    &:not(:last-child) {
       margin-bottom: 9px;

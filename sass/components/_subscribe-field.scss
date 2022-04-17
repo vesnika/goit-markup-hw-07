@@ -13,7 +13,7 @@
    border-radius: 4px;
    font-size: 16px;
    font-weight: 700;
-   line-height: 1.9em;
+   line-height: 1.9;
 
    letter-spacing: 0.06em;
 
@@ -33,7 +33,7 @@
    display: block;
    width: 100%;
    font-weight: 700;
-   line-height: 1.14em;
+   line-height: 1.14;
    font-size: 14px;
    text-transform: uppercase;
    color: var(--white-color);
@@ -51,7 +51,7 @@
 
    &::placeholder {
       font-size: 16px;
-      line-height: 1.25em;
+      line-height: 1.25;
       color: rgba(255, 255, 255, 0.6);
    }
 }

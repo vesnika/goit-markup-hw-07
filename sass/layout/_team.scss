@@ -1,4 +1,3 @@
-
 .team {
    background-color: var(--secondary-background-color);
 }
@@ -21,7 +20,7 @@
 .team-member-name {
    font-weight: 500;
    font-size: 16px;
-   line-height: 1.19em;
+   line-height: 1.19;
    text-align: center;
    margin-bottom: 10px;
 }
@@ -29,7 +28,7 @@
 .description-position {
    font-size: 16px;
    margin-bottom: 16px;
-   line-height: 1.19em;
+   line-height: 1.19;
    text-align: center;
    color: var(--secondary-color);
 }
