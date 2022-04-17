@@ -1,0 +1,212 @@
+.backdrop {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+
+   background-color: rgba(0, 0, 0, 0.2);
+   opacity: 1;
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+   opacity: 0;
+   pointer-events: none;
+   visibility: hidden;
+}
+.backdrop.is-hidden .modal {
+   transform: translate(-50%, -50%) scale(1.1);
+}
+.contact-form-btn {
+   display: block;
+
+   padding: 10px 55px;
+
+   background: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.9em;
+   letter-spacing: 0.06em;
+   color: var(--white-color);
+   margin: 0 auto;
+   margin-top: 30px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:focus,
+   &:hover {
+      background-color: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+   }
+}
+
+.modal {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1);
+
+   min-width: 528px;
+   min-height: 581px;
+
+   background-color: var(--white-color);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   padding: 40px;
+}
+.close-modal-icon {
+   background-color: var(--white-color);
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal-button {
+   position: absolute;
+   display: flex;
+
+   align-items: center;
+   justify-content: center;
+   align-self: flex-end;
+   top: 8px;
+   right: 8px;
+   width: 30px;
+   height: 30px;
+
+   background-color: var(--white-color);
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 50%;
+
+   &:hover,
+   &:focus {
+      fill: var(--accent-color);
+   }
+}
+.contact-form-field {
+   display: block;
+}
+
+.contact-form-input {
+   width: 100%;
+   height: 40px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   box-sizing: border-box;
+   border-radius: 4px;
+   padding: 12px 42px;
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:focus {
+      border-color: var(--accent-color);
+   }
+}
+
+.contact-form-title {
+   display: flex;
+   justify-content: center;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.15em;
+
+   margin-bottom: 12px;
+}
+.contact-form-fiel-title {
+   line-height: 1.17em;
+   letter-spacing: 0.01em;
+   font-size: 12px;
+   color: var(--secondary-color);
+}
+.contact-form-message {
+   display: block;
+   width: 100%;
+   resize: none;
+   height: 120px;
+   padding: 12px 16px;
+   margin-top: 4px;
+   margin-bottom: 20px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   box-sizing: border-box;
+   border-radius: 4px;
+
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &::placeholder {
+      line-height: 1.14em;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+   }
+
+   &:focus {
+      border-color: var(--accent-color);
+   }
+}
+.contact-form-checkbox-agreement {
+   line-height: 1.71em;
+   color: var(--secondary-color);
+}
+
+.contact-form-input-wrapper {
+   position: relative;
+   display: block;
+   margin-top: 4px;
+   margin-bottom: 10px;
+}
+
+.contact-form-icon {
+   position: absolute;
+   display: block;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 12px;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   .contact-form-input:focus + & {
+      fill: var(--accent-color);
+   }
+}
+.contact-form-checkbox-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+}
+.contact-form-checkbox {
+   width: 16px;
+   height: 15px;
+   color: var(--primary-color);
+}
+
+.contact-form-checkbox-link {
+   text-decoration: underline;
+   color: var(--accent-color);
+}
+
+.contact-form-checkbox-label {
+   display: flex;
+   align-items: center;
+
+   &::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 15px;
+      border: 2px solid var(--primary-color);
+      border-radius: 2px;
+      cursor: pointer;
+      margin-right: 9px;
+
+      .contact-form-checkbox:checked + & {
+         background-image: url(../img/Vector.svg);
+         background-size: auto auto;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: var(--accent-color);
+         border: none;
+      }
+      .contact-form-checkbox:focus + & {
+         outline: 1px solid var(--accent-color);
+      }
+   }
+}

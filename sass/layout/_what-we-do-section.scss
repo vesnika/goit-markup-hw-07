@@ -1,0 +1,35 @@
+.services {
+   background-color: var(--white-color);
+   padding-bottom: 94px;
+}
+.services-list {
+   display: flex;
+}
+.services-item {
+   position: relative;
+   width: 370px;
+   mix-blend-mode: normal;
+
+   &:not(:last-child) {
+      margin-right: 30px;
+   }
+}
+
+.lable {
+   font-weight: bold;
+   line-height: 1.14em;
+   text-transform: uppercase;
+   color: var(--white-color);
+}
+.services-lable {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 370px;
+   height: 70px;
+
+   background-color: rgba(47, 48, 58, 0.8);
+}

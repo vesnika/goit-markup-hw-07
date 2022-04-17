@@ -1,0 +1,19 @@
+.logo {
+   font-family: var(--secondary-font-title);
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19em;
+   letter-spacing: 0.03em;
+   color: #2196f3;
+   margin-right: 93px;
+}
+.logo__title {
+   color: var(--primary-color);
+}
+.footer-logo {
+   display: block;
+   margin-bottom: 20px;
+}
+.logo-footer__title {
+   color: var(--white-color);
+}

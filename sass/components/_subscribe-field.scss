@@ -1,0 +1,57 @@
+.contact-footer-wrapper {
+   display: flex;
+}
+.contact-form-footer {
+   margin-left: 93px;
+}
+
+.contact-form-footer-btn {
+   position: relative;
+
+   background-color: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 1.9em;
+
+   letter-spacing: 0.06em;
+
+   color: var(--white-color);
+   margin-left: 12px;
+   padding: 10px 62px 10px 29px;
+}
+
+.icon-send-email {
+   position: absolute;
+   fill: var(--white-color);
+   top: 50%;
+   transform: translateY(-50%);
+   margin-left: 10px;
+}
+.subscribe-us-title {
+   display: block;
+   width: 100%;
+   font-weight: 700;
+   line-height: 1.14em;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: var(--white-color);
+   margin-bottom: 20px;
+}
+.contact-form-email {
+   background-color: var(--header-footer-background-color);
+   width: 358px;
+   height: 50px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   padding: 15px 16px;
+   color: var(--white-color);
+
+   &::placeholder {
+      font-size: 16px;
+      line-height: 1.25em;
+      color: rgba(255, 255, 255, 0.6);
+   }
+}

@@ -1,0 +1,33 @@
+.feature-list {
+   display: flex;
+}
+.feature-list__title {
+   font-weight: 700;
+   line-height: 1.14;
+   font-size: inherit;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+
+.feature-list__description {
+   line-height: 1.71em;
+   color: var(--secondary-color);
+}
+.feature-list__item {
+   width: 270px;
+
+   &:not(:last-child) {
+      margin-right: 30px;
+   }
+}
+
+.wrapper-icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   height: 120px;
+   margin-bottom: 30px;
+   background: var(--secondary-background-color);
+   border-radius: 4px;
+}

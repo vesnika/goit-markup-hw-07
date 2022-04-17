@@ -1,0 +1,38 @@
+html {
+   box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+a {
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+}
+input,
+textarea {
+   outline: none;
+}
+img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+button {
+   cursor: pointer;
+   border: none;
+}
+body {
+   font-size: 14px;
+   font-weight: 400;
+   font-style: normal;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 0.03em;
+   color: var(--primary-color);
+   background-color: var(--white-color);
+}
